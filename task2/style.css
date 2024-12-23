@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+.desktop_additional{
+    max-height: 100%;
+    background-color: #f0f3f7;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.desktop_additional .Content_root{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 24px;
+}
+
+.desktop_additional .Content_root a{
+    color: rgba(0, 0, 0, .5);
+  
+}
+
+a{
+    text-decoration: none;
+}
+
+.desktop_lang{
+    cursor: pointer;
+    position: relative;
+}
+
+.desktop_lang .desktop_select {
+    color: rgba(0, 0, 0, .5);
+    font-size: var(--xx-small);
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.desktop_lang .desktop_drop {
+    transition: .2s;
+    opacity: .5;
+    margin-left: 2px;
+}
+
+.Content_root {
+    width: 100%;
+    max-width: 954px;
+    margin: 0 auto;
+}
+
+.desktop_lang .desktop_sub {
+    display: none;
+    flex-direction: column;
+    font-size: var(--xx-small);
+    line-height: 1.5;
+    position: absolute;
+    top: -14px;
+    left: -14px;
+    z-index: 100;
+    padding: 14px;
+    text-transform: uppercase;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .12);
+    border-radius: 8px;
+    gap: 8px;
+}
+
+.desktop_lang .desktop_sub a {
+    color: #000;
+}
+
+.desktop_main {
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desktop_main .desktop_content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.desktop_main .desktop_menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+}
+
+.desktop_main .desktop_item {
+    position: relative;
+    font-size: var(--normal);
+    line-height: var(--normal-ln);
+    display: flex;
+    align-items: center;
+    padding-bottom: 4px;
+    white-space: nowrap;
+}
+
+.desktop_main .desktop_item .desktop_drop{
+    transition: .2s;
+    margin-left: 2px;
+}
+
+a, body {
+    color: var(--default-font-color);
+}
+
+.desktop_main .desktop_sub{
+    position: absolute;
+    display: none;
+    padding: 12px 10px;
+    top: 23.5px;
+    left: -14px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .12);
+    gap: 12px;
+    flex-direction: column;
+    z-index: 999;
+}
+
+.desktop_main .desktop_sub .desktop_subItem {
+    font-size: var(--x-small);
+    line-height: var(--x-small-ln);
+    text-transform: none;
+    font-weight: 400;
+    padding: 2px 6px;
+    border-radius: 8px;
+    background: transparent;
+
+}
